@@ -17,7 +17,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 3)}>
       <Tilt
         options={{
           max: 45,
@@ -76,7 +76,7 @@ const Works = () => {
 
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn("", "", 0.1, 3)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

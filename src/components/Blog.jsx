@@ -6,13 +6,13 @@ import { fadeIn } from "../utils/motion";
 const Blog = () => {
   return (
     <div className="flex flex-col gap-y-8">
-      <motion.div variants={fadeIn("", "spring", 0.5, 0.75)}>
+      <motion.div variants={fadeIn("", "spring", 0.5, 3)}>
         <img src={walao} alt="project_image" className="w-full " />
       </motion.div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 relative h-full">
         <motion.div
           className="col-span-2"
-          variants={fadeIn("", "spring", 0.75, 0.75)}
+          variants={fadeIn("", "spring", 0.75, 3)}
         >
           <div className="h-full relative">
             <img src={walao1} alt="project_image" className="w-full h-full" />
@@ -33,7 +33,7 @@ const Blog = () => {
         <div className="flex flex-col gap-y-4 relative">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full h-full relative">
             <motion.div
-              variants={fadeIn("", "spring", 1, 0.75)}
+              variants={fadeIn("", "spring", 1, 3)}
               className="relative h-full w-full"
             >
               <div className="relative h-full w-full">
@@ -55,7 +55,7 @@ const Blog = () => {
                 </div>
               </div>
             </motion.div>
-            <motion.div variants={fadeIn("", "spring", 1.25, 0.75)}>
+            <motion.div variants={fadeIn("", "spring", 1.25, 3)}>
               <div className="relative w-full h-full">
                 <img
                   src={walao4}
@@ -78,7 +78,7 @@ const Blog = () => {
           </div>
           <motion.div
             className="relative"
-            variants={fadeIn("", "spring", 1.5, 0.75)}
+            variants={fadeIn("", "spring", 1.5, 3)}
           >
             <div classname="relative">
               <img src={walao2} alt="project_image" className="w-full" />

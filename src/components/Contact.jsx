@@ -69,18 +69,18 @@ const Contact = () => {
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden h-[80vh]`}
     >
       <div className="flex flex-col p-8 rounded-2xl h-full justify-center">
-        <motion.div variants={slideIn("left", "tween", 0.3, 1)}>
+        <motion.div variants={slideIn("left", "tween", 0.3, 1.5)}>
           <h3 className={styles.sectionHeadText}>Powering The</h3>
         </motion.div>
-        <motion.div variants={slideIn("left", "tween", 0.6, 1)}>
+        <motion.div variants={slideIn("left", "tween", 0.6, 1.5)}>
           <h3 className={styles.sectionHeadText}>Future of Gaming</h3>
         </motion.div>
-        <motion.div variants={slideIn("left", "tween", 0.9, 1)}>
+        <motion.div variants={slideIn("left", "tween", 0.9, 1.5)}>
           <p className={styles.sectionSubText}>
             Seeking yield around the Metaverse
           </p>
         </motion.div>
-        <motion.div variants={slideIn("left", "tween", 1.2, 1)}>
+        <motion.div variants={slideIn("left", "tween", 1.2, 1.5)}>
           <button
             type="submit"
             className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary mt-[20px]"
