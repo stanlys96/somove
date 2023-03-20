@@ -59,8 +59,8 @@ export const zoomIn = (delay, duration) => {
 export const slideIn = (direction, type, delay, duration) => {
   return {
     hidden: {
-      x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-      y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
+      x: direction === "left" ? "-150%" : direction === "right" ? "150%" : 0,
+      y: direction === "up" ? "150%" : direction === "down" ? "150%" : 0,
     },
     show: {
       x: 0,

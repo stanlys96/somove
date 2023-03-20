@@ -6,6 +6,14 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import logoRed from "./logo_red.png";
+import logoZabava from "./logo_zabava.png";
+import somoveLogo from "./somove_logo.png";
+import walao from "./walao.png";
+import walao1 from "./walao_1.png";
+import walao2 from "./walao_2.png";
+import walao3 from "./walao_3.png";
+import walao4 from "./walao_4.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -59,4 +67,12 @@ export {
   carrent,
   jobit,
   tripguide,
+  logoRed,
+  logoZabava,
+  somoveLogo,
+  walao,
+  walao1,
+  walao2,
+  walao3,
+  walao4,
 };

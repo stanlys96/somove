@@ -23,55 +23,56 @@ import {
   jobit,
   tripguide,
   threejs,
+  somoveLogo,
 } from "../assets";
 
 export const navLinks = [
+  {
+    id: "home",
+    title: "Home",
+  },
   {
     id: "about",
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "tools",
+    title: "Tools",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "blog",
+    title: "Blog",
   },
 ];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "20.000+ Scholarships",
     icon: web,
+    subTitle:
+      "The largest web3 gaming guild in Southeast Asia currently operates locally in 6 Southeast Asian countries.",
   },
   {
-    title: "React Native Developer",
+    title: "80+ Games Invested",
     icon: mobile,
+    subTitle:
+      "We are proud to support the top web3 games across all genres, providing them with capital, player liquidity & operational support.",
   },
   {
-    title: "Backend Developer",
+    title: "40.000+ Gamers",
     icon: backend,
+    subTitle:
+      "We are managing a group of top-performing gamers across the world to fight for earning rewards in multiple games.",
   },
   {
-    title: "Content Creator",
+    title: "10 M Assets Under Management",
     icon: creator,
+    subTitle:
+      "Our treasury holds NFT assets, governance tokens of games, and stablecoins to support the web3 games with the highest potential.",
   },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
   {
     name: "TypeScript",
     icon: typescript,
@@ -81,36 +82,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
     name: "MongoDB",
     icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -198,9 +171,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Tool 1",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.",
     tags: [
       {
         name: "react",
@@ -215,13 +188,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: somoveLogo,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Tool 2",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.",
     tags: [
       {
         name: "react",
@@ -236,13 +209,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: somoveLogo,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Tool 3",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.",
     tags: [
       {
         name: "nextjs",
@@ -257,7 +230,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: somoveLogo,
     source_code_link: "https://github.com/",
   },
 ];
