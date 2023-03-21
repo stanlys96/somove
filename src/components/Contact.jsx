@@ -66,7 +66,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden h-[80vh]`}
+      className={`flex flex-col md:flex-row gap-2 md:gap-10 overflow-hidden h-[80vh]`}
     >
       <div className="flex flex-col p-8 rounded-2xl h-full justify-center">
         <motion.div variants={slideIn("left", "tween", 0.3, 1.5)}>
@@ -80,10 +80,13 @@ const Contact = () => {
             Seeking yield around the Metaverse
           </p>
         </motion.div>
-        <motion.div variants={slideIn("left", "tween", 1.2, 1.5)}>
+        <motion.div
+          className="w-full flex justify-center items-center"
+          variants={slideIn("left", "tween", 1.2, 1.5)}
+        >
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary mt-[20px]"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary mt-[20px] mx-auto w-fit"
           >
             Enter The World of Blockchain
           </button>
@@ -92,7 +95,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[150px] pr-[200px] md:pr-0"
       >
         <EarthCanvas />
       </motion.div>
