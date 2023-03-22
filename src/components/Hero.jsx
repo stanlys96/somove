@@ -1,39 +1,48 @@
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div>
-
+    <div
+      className={`flex flex-col md:flex-row gap-2 md:gap-10 overflow-hidden h-[80vh]`}
+    >
+      <div className="flex flex-col p-8 rounded-2xl h-full justify-center">
+        <motion.div variants={slideIn("left", "tween", 0.3, 1.5)}>
+          <h3 className={styles.sectionHeadText}>Powering The</h3>
+        </motion.div>
+        <motion.div variants={slideIn("left", "tween", 0.6, 1.5)}>
+          <h3 className={styles.sectionHeadText}>Future of Gaming</h3>
+        </motion.div>
+        <motion.div variants={slideIn("left", "tween", 0.9, 1.5)}>
+          <p className={styles.sectionSubText}>
+            Seeking yield around the Metaverse
+          </p>
+        </motion.div>
         <motion.div
-          variants={slideIn("left", "tween", 0.2, 1)}
-          // className="flex flex-col p-8 rounded-2xl h-full justify-center"
+          className="w-full flex justify-center items-center"
+          variants={slideIn("left", "tween", 1.2, 1.5)}
         >
-          <div>
-            <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm <span className="text-[#915EFF]">Adrian</span>
-            </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop 3D visuals, user <br className="sm:block hidden" />
-              interfaces and web applications
-            </p>
-          </div>
+          <button
+            type="submit"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary mt-[20px] mx-auto w-fit"
+          >
+            Enter The World of Blockchain
+          </button>
         </motion.div>
       </div>
 
-      <ComputersCanvas />
-
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[150px] pr-[200px] md:pr-0"
+      >
+        <EarthCanvas />
+      </motion.div>
+      <div className="absolute xs:bottom-24 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
@@ -50,8 +59,8 @@ const Hero = () => {
           </div>
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Hero;
+export default SectionWrapper(Hero, "home");

@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close, logoZabava, logoRed } from "../assets";
-import { slideIn } from "../utils/motion";
+import { menu, close, logoRed } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
