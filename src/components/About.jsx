@@ -43,15 +43,16 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
+      <div className="flex justify-center">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 3)}
+          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-center"
+        >
+          We are the glitch in the Matrix!
+        </motion.p>
+      </div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 3)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        We are the glitch in the Matrix!
-      </motion.p>
-
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 items-center justify-center">
         {services.map((service, index) => (
           <AboutCard key={service.title} index={index} {...service} />
         ))}

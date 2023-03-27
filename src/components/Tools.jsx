@@ -74,10 +74,10 @@ const Tools = () => {
         <h2 className={`${styles.sectionHeadText}`}>Works & Products</h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="w-full flex justify-center">
         <motion.p
           variants={fadeIn("", "", 0.1, 3)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] text-center"
         >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

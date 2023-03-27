@@ -6,6 +6,7 @@ import Tools from "./Tools";
 import Hero from "./Hero";
 import CanvasLoader from "./Loader";
 import Blog from "./Blog";
+import Video from "./Video";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   BallCanvas,
   StarsCanvas,
   Blog,
+  Video,
 };
